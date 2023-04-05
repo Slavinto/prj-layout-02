@@ -4,7 +4,14 @@
     <body>
         <div class="wrapper">
             <section class="top _container _full-width">
-                @@include('./html/header.html', {}) test
+                <figure class="top__background">
+                    <img
+                        src="@img/bg.png"
+                        alt=""
+                        class="top__image _adaptive"
+                    />
+                </figure>
+                @@include('./html/header.html', {})
             </section>
             <main class="_container"></main>
             @@include('./html/footer.html', {})
