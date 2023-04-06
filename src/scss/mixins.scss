@@ -151,7 +151,6 @@
 }
 
 @mixin create-responsive-container($layout: mobile) {
-    display: block;
     padding: 0 3rem;
     @if ($layout == mobile) {
         $ratio: 1;

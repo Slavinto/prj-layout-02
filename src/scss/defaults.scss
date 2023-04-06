@@ -3,18 +3,10 @@
 /*===========================================*/
 // Variables
 /*===========================================*/
-$minWidth: 320px;
-$maxWidth: 1152;
 // Main content area width
-$maxWidthContainer: 1440;
 // Header menu width
-$headerMaxWidth: 1032;
 
 // =======================
-$md1: $maxWidthContainer + 12;
-$md2: 992;
-$md3: 768;
-$md4: 480;
 // =======================
 // Breakpoints
 $breakpoints: (
@@ -63,25 +55,21 @@ $desktop-wideRem: calc(map_get($breakpoints, desktop-wide) / 10 / 1px);
 html {
     /* decreases default root element font size to 10px from 16px */
     // font-size: 62.5%;
+    // font-size: calc(10 / 16) * 100% !important;
 
-    font-size: calc(10 / 16) * 100% !important;
-
-    // @media (max-width: ($md2+px)) {
-    //     font-size: calc(11 / 16) * 100%;
-    // }
-    @media (max-width: ($md1 + px)) {
-        font-size: calc(10 / 16) * 100% !important;
+    @media (width > ($desktopRem*10 + px)) {
+        font-size: calc(10 / 16) * 100%;
     }
-    @media (max-width: ($md3+px)) {
+    @media (max-width: ($tabletRem*10+px)) {
         font-size: calc(9 / 16) * 100% !important;
     }
-    @media (max-width: ($md4+px)) {
+    @media (width < ($phone-wideRem*10+px)) {
         font-size: calc(8 / 16) * 100% !important;
     }
 }
 
 // Default font-family
-$fontFamily: "Heebo";
+$fontFamily: "Montserrat";
 
 body {
     ul {

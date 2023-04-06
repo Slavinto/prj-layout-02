@@ -2,18 +2,31 @@
 <html lang="en">
     @@include('./html/head.html', { "title": "Main Page" })
     <body>
+        <figure class="background">
+            <img src="@img/bg.png" alt="" class="background__image _adaptive" />
+        </figure>
         <div class="wrapper">
-            <section class="top _container _full-width">
-                <figure class="top__background">
-                    <img
-                        src="@img/bg.png"
-                        alt=""
-                        class="top__image _adaptive"
-                    />
-                </figure>
-                @@include('./html/header.html', {})
-            </section>
-            <main class="_container"></main>
+            <main class="main-content _container">
+                <section class="top">
+                    <div class="top__header">
+                        <div class="top__logo">LOGO</div>
+                        @@include('./html/header.html', {})
+                    </div>
+                    <article class="top__text">
+                        <h1 class="top__main-text">
+                            TAKE YOUR BUSINESS TO NEW HEIGHTS
+                        </h1>
+                        <div class="top__mission">
+                            <p class="top__mission-text">
+                                We will help you breakthrough by translating
+                                your ideas into a working reality. It’s time to
+                                grow.
+                            </p>
+                            <a href="#" class="top__btn">Contact Us</a>
+                        </div>
+                    </article>
+                </section>
+            </main>
             @@include('./html/footer.html', {})
         </div>
         <script src="js/app.min.js"></script>
