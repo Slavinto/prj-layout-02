@@ -2,12 +2,10 @@
 <html lang="en">
     @@include('./html/head.html', { "title": "Main Page" })
     <body>
-        <figure class="background">
-            <img src="@img/bg.png" alt="" class="background__image _adaptive" />
-        </figure>
+        <img src="@img/bg.png" alt="" class="background-centered" />
         <div class="wrapper">
             <main class="main-content _container">
-                <section class="top">
+                <section class="top _container">
                     <div class="top__header">
                         <div class="top__logo">LOGO</div>
                         @@include('./html/header.html', {})

@@ -1,3 +1,47 @@
 //=================================================
 // Home Section Boilerplate
 //=================================================
+.main-content {
+}
+
+.top {
+    // .top__header
+
+    &__header {
+        display: grid;
+        grid-template-columns: 680fr 464fr;
+    }
+
+    // .top__logo
+
+    &__logo {
+        font-weight: 700;
+        font-size: 1.8rem;
+        padding-top: 6.7rem;
+    }
+
+    // .top__text
+
+    &__text {
+    }
+
+    // .top__main-text
+
+    &__main-text {
+    }
+
+    // .top__mission
+
+    &__mission {
+    }
+
+    // .top__mission-text
+
+    &__mission-text {
+    }
+
+    // .top__btn
+
+    &__btn {
+    }
+}

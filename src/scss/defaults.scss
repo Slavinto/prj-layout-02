@@ -4,6 +4,8 @@
 // Variables
 /*===========================================*/
 // Main content area width
+$main-width: 144;
+$main-content: 114.4;
 // Header menu width
 
 // =======================
@@ -124,9 +126,18 @@ body {
     object-fit: cover;
 }
 
+// Centered image background
+.background-centered {
+    @include create-responsive-image($main-width);
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 // Main adaptive container
 ._container {
-    // @extend %main-adaptive-grid-desktop;
     @include create-responsive-container(desktop);
 }
 /*===========================================*/
